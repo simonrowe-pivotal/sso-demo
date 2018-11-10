@@ -1,0 +1,9 @@
+---
+applications:
+- name: sso-demo
+  memory: 1G
+  path: ./target/sso-demo-0.0.1-SNAPSHOT.jar
+  env:
+    SECURITY_OAUTH2_CLIENT_SCOPE: "openid,uaa.user"
+  services:
+    - sso-google
